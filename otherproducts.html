@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dye Shop</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo" class="logo">
+            </div>
+            <pre><h1 class="brand-name">RK Dyes               </h1></pre>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for dyes...">
+            <button id="search-button">Search</button>
+        </div>
+        <button id="cart-button" onclick="showCart()">View Cart</button>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="sidebar">
+                <a href="index1.html">Home</a>
+                <a href="winterdyes.html">Winter Dyes</a>
+                <a href="summerdyes.html">Summer Dyes</a>
+                
+                   
+                <!-- Dyeing Instructions in the Sidebar -->
+                <div class="dyeing-instructions">
+                    <h2>Dyeing Instructions</h2>
+                    <ul type="none">
+                        <li><a href="#step1">Step 1: Weigh the Fabric</a></li>
+                        <li><a href="#step2">Step 2: Prepare the Dyeing Solution</a></li>
+                        <li><a href="#step3">Step 3: Dye the Fabric</a></li>
+                        <li><a href="#step4">Step 4: Rinse and Wash</a></li>
+
+                    </ul>
+                </div>
+                <div class="testimonials">
+                    <h3>What Our Customers Say</h3>
+                    <p>"The colors are vibrant and last long. Great quality!" - Jane D.</p>
+                    <p>"Love the eco-friendly dyes. Will definitely buy again!" - Mike T.</p>
+                </div>
+                
+                
+                
+               
+                    
+            </div>
+
+            <div class="container">
+                <h2 class="category-title">Other Products</h2>
+
+                <div class="product-container">
+                    <div class="product" id="product-red-dye">
+                        <div class="upper-part">
+                            <img src="fixer.jpg" alt="Red Dye">
+                        </div>
+                        <div class="lower-part">
+                            <p class="price">Fixer-$10</p>
+                            <button onclick="addToCart('Fixer', 10)">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="product" id="product-blue-dye">
+                        <div class="upper-part">
+                            <img src="lissapol.jpg" alt="Blue Dye">
+                        </div>
+                        <div class="lower-part">
+                            <p class="price">Lissapol-$12</p>
+                            <button onclick="addToCart('Lissapol', 12)">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="product" id="product-green-dye">
+                        <div class="upper-part">
+                            <img src="rngoli.jpg" alt="Green Dye">
+                        </div>
+                        <div class="lower-part">
+                            <p class="price">Rangoli colours-$11</p>
+                            <button onclick="addToCart('Rangoli colours', 11)">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="product" id="product-white-dye">
+                        <div class="upper-part">
+                            <img src="floorcleaner.jpg" alt="White Dye">
+                        </div>
+                        <div class="lower-part">
+                            <p class="price">floor Cleaner $20</p>
+                            <button onclick="addToCart('Floor Cleaner', 20)">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="product" id="product-black-dye">
+                        <div class="upper-part">
+                            <img src="f3a7f7b5-45e0-49c6-8ceb-5c4ff27fd0a2.jpg" alt="Black Dye">
+                        </div>
+                        <div class="lower-part">
+                            <p class="price">Cloth Whitener $20</p>
+                            <button onclick="addToCart('Cloth Whitener', 20)">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="product" id="product-white-dye">
+                        <div class="upper-part">
+                            <img src="baking soda.jpg" alt="White Dye">
+                            
+                        </div>
+                        <div class="lower-part">
+                            <p class="price">Baking Soda-$8</p>
+                            <button onclick="addToCart('White Dye', 8)">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="product" id="product-purple-dye">
+                        <div class="upper-part">
+                            <img src="food colour.jpg" alt="Purple Dye">
+                        </div>
+                        <div class="lower-part">
+                            <p class="price">Food Colour-$14</p>
+                            <button onclick="addToCart('Food Colour', 14)">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="product" id="product-orange-dye">
+                        <div class="upper-part">
+                            <img src="neon.jpg" alt="Orange Dye">
+                        </div>
+                        <div class="lower-part">
+                            <p class="price">Neon Colours-$13</p>
+                            <button onclick="addToCart('Neon Dyes', 13)">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

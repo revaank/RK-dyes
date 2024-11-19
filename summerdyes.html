@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dye Shop</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo" class="logo">
+            </div>
+            <pre><h1 class="brand-name">RK Dyes               </h1></pre>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for dyes...">
+            <button id="search-button">Search</button>
+        </div>
+        <button id="cart-button" onclick="showCart()">View Cart</button>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="sidebar">
+                <a href="index1.html">Home</a>
+                <a href="otherproducts.html">Other Products</a>
+                <a href="summerdyes.html">Summer Dyes</a>
+                
+                   
+                <!-- Dyeing Instructions in the Sidebar -->
+                <div class="dyeing-instructions">
+                    <h2>Dyeing Instructions</h2>
+                    <ul type="none">
+                        <li><a href="#step1">Step 1: Weigh the Fabric</a></li>
+                        <li><a href="#step2">Step 2: Prepare the Dyeing Solution</a></li>
+                        <li><a href="#step3">Step 3: Dye the Fabric</a></li>
+                        <li><a href="#step4">Step 4: Rinse and Wash</a></li>
+
+                    </ul>
+                </div>
+                <div class="testimonials">
+                    <h3>What Our Customers Say</h3>
+                    <p>"The colors are vibrant and last long. Great quality!" - Jane D.</p>
+                    <p>"Love the eco-friendly dyes. Will definitely buy again!" - Mike T.</p>
+                </div>
+                
+                
+                
+               
+                    
+            </div>
+
+            <div class="container">
+                <h2 class="category-title">Summer Dyes</h2>
+
+                <div class="product-container">
+                    <div class="product" id="product-red-dye">
+                        <div class="upper-part">
+                            <img src="pink.jpg" alt="Red Dye">
+                            
+                        </div>
+                        <div class="lower-part">
+                            <p class="price">Pink Summer Dye-10$</p>
+                            <button onclick="addToCart('Pink Summer Dye', 10)">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="product" id="product-blue-dye">
+                        <div class="upper-part">
+                            <img src="skyblue.jpg" alt="Blue Dye">
+
+                        </div>
+                        <div class="lower-part">
+                            <p class="price">Sky Blue Summer Dye-$12</p>
+                            <button onclick="addToCart('Sky-Blue Dye', 12)">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="product" id="product-green-dye">
+                        <div class="upper-part">
+                            <img src="peacock.jpg" alt="Green Dye">
+                        </div>
+                        <div class="lower-part">
+                            <p class="price">Peacock Green Dye-$11</p>
+                            <button onclick="addToCart('PeacockGreen Dye', 11)">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="product" id="product-purple-dye">
+                        <div class="upper-part">
+                            <img src="purpleoil.jpg" alt="Purple Dye">
+                        </div>
+                        <div class="lower-part">
+                            <p class="price">Purple oil dye $14</p>
+                            <button onclick="addToCart('Purple Oil Dye', 14)">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="product" id="product-black-dye">
+                        <div class="upper-part">
+                            <img src="white.jpg" alt="Black Dye">
+                        </div>
+                        <div class="lower-part">
+                            <p class="price">White Summer Dyes-$15</p>
+                            <button onclick="addToCart('Black Dye', 15)">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="product" id="product-orange-dye">
+                        <div class="upper-part">
+                            <img src="orangeoil.jpg" alt="Orange Dye">
+                        </div>
+                        <div class="lower-part">
+                            <p class="price">Orange Oil Dye $13</p>
+                            <button onclick="addToCart('Orange Oil Dye', 13)">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="product" id="product-purple-dye">
+                        <div class="upper-part">
+                            <img src="grey.jpg" alt="Purple Dye">
+                        </div>
+                        <div class="lower-part">
+                            <p class="price">GreyDye-$14</p>
+                            <button onclick="addToCart('Grey Dye', 14)">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="product" id="product-orange-dye">
+                        <div class="upper-part">
+                            <img src="red.jpg" alt="Orange Dye">
+                        </div>
+                        <div class="lower-part">
+                            <p class="price">Summer Red Dye-$13</p>
+                            <button onclick="addToCart('Summer Red Dye', 13)">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,402 @@
+/* General reset and basic styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Full-width header */
+.main-header {
+    background-color: #001824; /* Dark blue-gray */
+    color: #ecf0f1; /* Light text */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    align-items: center;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+    width: 100%; /* Make sure it takes full width */
+}
+h2{
+    color: #ecf0f1;
+}
+h1 {
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    font-size: 30px;
+    text-align:center;
+}
+
+/* Flex container for search bar and cart button */
+.search-cart-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align to the right side */
+}
+
+.search-bar {
+    
+    transform: translate(-0px);
+
+    margin-right: 10px;
+    top:50px; /* Space between search bar and cart button */
+}
+
+#search-input {
+    padding: 8px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px 0 0 5px;
+    width: 250px;
+    font-size: 14px;
+}
+
+#search-button {
+    padding: 8px 15px;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#search-button:hover {
+    background-color: #16a085;
+}
+
+/* Cart icon button */
+.cart-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1abc9c;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cart-icon i {
+    font-size: 20px;
+    color: white;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 200px;
+    background-color: #0f1833; /* Dark sidebar */
+    padding: 20px;
+    opacity:82%;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar a {
+    display: block;
+    color: #ecf0f1;
+    text-decoration: none;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #34495e;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #23be9f; /* Lighter shade for hover effect */
+}
+
+/* Wrapper for sidebar and main content */
+.wrapper {
+    display: flex;
+    margin-left: 220px; /* Adjust for sidebar width */
+    padding: 20px;
+}
+
+/* Main content container */
+.container {
+    flex: 1;
+    padding: 20px;
+}
+
+.category-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Grid for product display */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Display 4 items per row */
+    gap: 30px; /* Increase space between the divs */
+    margin-top: 20px;
+    border-radius:80%;
+}
+
+.product {
+    background-color: #fadb7e; /* Keep the image part background white */
+    border: 1px solid #000609;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 350px; /* Maintain the height */
+    box-sizing: border-box;
+    
+}
+
+.product .upper-part {
+    background-color: #fbe2a5; /* Keep the image and title part with white background */
+    padding: 15px;
+    flex-grow: 1;
+    border-radius:80%;
+    
+}
+
+.product .lower-part {
+    background-color: #ffd148; /* Change the background of the lower part */
+    padding: 11px;
+    height: 18%; /* Reduce the height of the lower part */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align button and price vertically */
+}
+
+.product img {
+    width: 100%;
+    height: 230px; /* Adjust image height */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product h4 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.product .price {
+    font-size: 14px;
+    color: #000000;
+    margin: 10px 0;
+}
+
+
+.product button {
+    background-color: #1abc9c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.product button:hover {
+    background-color: #e10b0b;
+}
+
+/* Full-width footer */
+.main-footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Full-width header */
+.main-header {
+    background-color: #0d1b29; /* Dark blue-gray */
+    color: #ecf0f1; /* Light text */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Align search bar and cart button to opposite sides */
+    align-items: center;
+    width: 100%; /* Ensure full width */
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Space for separation between the search bar and cart button */
+}
+
+#search-input {
+    padding: 8px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px 0 0 5px;
+    width: 230px;
+    font-size: 14px;
+}
+
+#search-button {
+    padding: 8px 15px;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#search-button:hover {
+    background-color: #16a085;
+}
+
+/* Cart Button Styling */
+.cart-button-container {
+    display: flex;
+    justify-content: flex-end; /* Align to the right side of the header */
+    position: relative;
+}
+
+#cart-button {
+    background-color: #23be9f; /* Matching green shade */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s
+}
+/* Cart dropdown container *
+/* Full-width header */
+.main-header {
+    background-color: #010341; /* Dark blue-gray */
+    color: #ecf0f1; /* Light text */
+    padding: 20px;
+    text-align: center;
+    opacity:90%;
+    font-size: 24px;
+    display: flex; /* Make the header a flex container */
+    justify-content: space-between; /* Space between the title and right side elements */
+    align-items: center;
+}
+
+/* Container to group search bar and cart button together */
+.header-content {
+    display: flex;
+    align-items: center; /* Align the search bar and cart button vertically */
+    justify-content: flex-end; /* Align them to the right */
+    width: 100%;
+}
+
+/* Styling for the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Space between search bar and cart button */
+}
+
+#search-input {
+    padding: 8px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px 0 0 5px;
+    width: 250px;
+    font-size: 14px;
+}
+
+#search-button {
+    padding: 8px 15px;
+    background-color: #23be9f;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#search-button:hover {
+    background-color: #669bbc;
+}
+
+/* Cart Button Styling */
+#cart-button {
+    background-color: #23be9f; /* Matching green shade */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#cart-button:hover {
+    background-color: #16a085;
+}
+
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    margin-right: 500px;
+}
+
+.logo {
+    height: 80px;
+}
+
+pre {
+    font-family: inherit;
+    margin: 0;
+}
+.brand-name {
+    font-family:'Chicago', sans-serif; /* Use a bold modern font */
+    font-size: 2.2em;
+    background: linear-gradient(to right, #c1121f, #c1121f); /* Gradient effect */
+    -webkit-background-clip: text;
+    color: transparent; /* Makes the text transparent to show the gradient */
+    text-shadow: 2px 2px 5px rgba(255, 0, 157, 0.541); /* Adds a soft shadow for depth */
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Black Forest';
+    src: url(Chicago.otf) format('truetype'); /* Path to your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-image: url('OIP\ \(2\).jpg'); /* Add your image URL here */
+    background-size: cover; /* Ensure the image covers the whole page */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Makes the image scroll with the user */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+.dyeing-instructions{
+    padding-top:80PX;
+    margin-right: 30px;;
+}
+.testimonials{
+    color: #f5f5f5;
+    font-size: smaller;
+    padding-top:80px;
+}
